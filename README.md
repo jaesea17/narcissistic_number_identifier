@@ -1,0 +1,1 @@
+Narcissistic number identifier app is simply and app that takes in the input of any given number and output a result saying if the number is a narcissistic number or not
