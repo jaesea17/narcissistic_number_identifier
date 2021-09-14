@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Algerian";
+    line-height: 1.4;
+    height: 100vh;
+    text-align: center;
+    background-color: burlywood;
+    padding: 50px;
+  }
+
+  #main {
+    text-align: center;
+    
+  }
+
+  #input-number {
+    font-weight: 400px;
+    padding-right: 5px;
+    padding-left: 10px;
+    border-radius: calc(0.5 * 100px);
+  }
+  
+  #input-submit {
+    background: transparent;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: black;
+    color: #4d4d4d;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  
+  #input-number,
+  #input-submit {
+    height: 27px;
+    outline: none;
+    border: ;
+  }
