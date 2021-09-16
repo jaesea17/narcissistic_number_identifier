@@ -14,7 +14,7 @@ const determine = (e) => {
         sum += Math.pow(unit,digits);
     });
     
-    if(sum == numberEntered){
+    if(sum === numberEntered){
         paragraph.style.color = 'green';
         paragraph.innerHTML = `${numberEntered}&nbsp&nbsp&nbsp&nbsp&nbsp is a Narcissistic Number`
     }
