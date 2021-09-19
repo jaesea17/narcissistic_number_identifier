@@ -12,10 +12,7 @@ const determine = (e) => {
     singleNumber.map((unit)=>{
         sum += Math.pow(unit,digits);
     });
-    if(numberEntered < 0 ){
-
-    }
-    else if(sum == numberEntered){
+    if(sum == numberEntered){
         paragraph.style.color = 'green';
         paragraph.innerHTML = `${numberEntered}&nbsp&nbsp&nbsp&nbsp&nbsp is a Narcissistic Number`
     }
