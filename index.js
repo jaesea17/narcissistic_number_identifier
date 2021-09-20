@@ -12,14 +12,23 @@ const determine = (e) => {
     singleNumber.map((unit)=>{
         sum += Math.pow(unit,digits);
     });
-    if(sum == numberEntered){
+    let isWhole = parseFloat(numberEntered);
+    
+    if(!Number.isInteger(isWhole)){
+        paragraph.style.color = 'red'; 
+        paragraph.innerHTML = 'only positive whole numbers are accepted';
+    }
+    if(isWhole < 0 || isWhole % 1 != 0 ){
+        paragraph.style.color = 'red'; 
+        paragraph.innerHTML = 'only positive whole numbers are accepted';
+     }
+    else if(sum === isWhole){
         paragraph.style.color = 'green';
-        paragraph.innerHTML = `${numberEntered}&nbsp&nbsp&nbsp&nbsp&nbsp is a Narcissistic Number`
+        paragraph.innerHTML = `${isWhole}&nbsp&nbsp&nbsp&nbsp&nbsp is a Narcissistic Number`
     }
     else{
         paragraph.style.color = 'red';
-        paragraph.innerHTML = `${numberEntered}&nbsp&nbsp&nbsp&nbsp is not a Narcissistic Number`;
-    
+        paragraph.innerHTML = `${isWhole}&nbsp&nbsp&nbsp&nbsp is not a Narcissistic Number`;    
     }
 
     body.appendChild(paragraph);
