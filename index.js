@@ -16,15 +16,16 @@ const determine = (e) => {
     
     if(!Number.isInteger(isWhole)){
         paragraph.style.color = 'red'; 
-        paragraph.innerHTML = 'only positive whole numbers are accepted';
+        paragraph.innerHTML = 'only positive whole numbers above  &nbsp "0" &nbsp are accepted';
     }
-    if(isWhole < 0 || isWhole % 1 != 0 ){
+    else if(isWhole < 1 || isWhole % 1 != 0 ){
         paragraph.style.color = 'red'; 
-        paragraph.innerHTML = 'only positive whole numbers are accepted';
+        paragraph.innerHTML = 'only positive whole numbers above  &nbsp "0" &nbsp are accepted';
      }
+    
     else if(sum === isWhole){
         paragraph.style.color = 'green';
-        paragraph.innerHTML = `${isWhole}&nbsp&nbsp&nbsp&nbsp&nbsp is a Narcissistic Number`
+        paragraph.innerHTML = `${isWhole}&nbsp&nbsp&nbsp&nbsp&nbsp is a Narcissistic Number`;
     }
     else{
         paragraph.style.color = 'red';
